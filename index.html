@@ -1,1130 +1,532 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FALECOM PROPAGANDA | Assessoria e Estratégia em Mídia OOH & DOOH</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            yellow: '#FFC72C',
-                            yellowHover: '#E5B020',
-                            black: '#0D0D0E',
-                            dark: '#141416',
-                            card: '#1A1A1E',
-                            grayDark: '#282830',
-                            grayLight: '#F4F4F6',
-                            muted: '#A0A0AB'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Plus Jakarta Sans', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .yellow-glow {
-            box-shadow: 0 0 25px rgba(255, 199, 44, 0.35);
-        }
-        .yellow-glow-sm {
-            box-shadow: 0 0 12px rgba(255, 199, 44, 0.25);
-        }
-        .bg-grid-pattern {
-            background-image: radial-gradient(rgba(255, 199, 44, 0.12) 1px, transparent 1px);
-            background-size: 28px 28px;
-        }
-        .gradient-overlay {
-            background: linear-gradient(180deg, rgba(13,13,14,0.75) 0%, rgba(13,13,14,0.98) 100%);
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #141416;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #282830;
-            border-radius: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #FFC72C;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FaleCom Propaganda | Estratégia de Mídia: OOH, TV, Rádio, Online e Eventos</title>
+<meta name="description" content="FaleCom Propaganda: estratégia e planejamento de mídia personalizados para a sua marca em OOH, TV, rádio, online e eventos.">
+<meta property="og:title" content="FaleCom Propaganda | Estratégia de Mídia">
+<meta property="og:description" content="Planejamento personalizado para sua marca em OOH, TV, rádio, online e eventos.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFC20E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='8' width='56' height='40' rx='12' fill='%23FFC20E'/%3E%3Cpath d='M18 46 L16 58 L30 46Z' fill='%23FFC20E'/%3E%3Ctext x='32' y='36' font-family='Arial' font-weight='700' font-size='20' fill='%23fff' text-anchor='middle'%3Ecom%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --yellow:#FFC20E;
+    --yellow-dark:#E5AC00;
+    --ink:#161616;
+    --ink-2:#3B3B3B;
+    --muted:#6B6B6B;
+    --line:#E6E3DC;
+    --paper:#FFFFFF;
+    --paper-2:#F5F3EE;
+    --radius:14px;
+    --wrap:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit}
+  section[id]{scroll-margin-top:84px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  h1,h2,h3{line-height:1.08;letter-spacing:-.02em}
+  h2{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:800}
+  p.lead{font-size:1.15rem;color:var(--ink-2);max-width:40rem}
+
+  /* ---------- Botões ---------- */
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font:700 1rem/1 'Archivo',sans-serif;padding:1rem 1.4rem;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-yellow{background:var(--yellow);color:var(--ink)}
+  .btn-yellow:hover{background:var(--yellow-dark)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#000}
+  .btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+  .btn-line:hover{background:var(--ink);color:#fff}
+  .btn svg{width:18px;height:18px}
+
+  /* ---------- Logo ---------- */
+  .logo{display:inline-flex;align-items:center;gap:.25rem;text-decoration:none;font-weight:800;font-size:1.65rem;letter-spacing:-.03em;color:var(--ink-2)}
+  .logo .bubble{position:relative;background:var(--yellow);color:#fff;padding:.02em .32em .08em;border-radius:.3em;line-height:1.15}
+  .logo .bubble::after{content:"";position:absolute;left:.5em;bottom:-.32em;border-left:.28em solid transparent;border-right:.28em solid transparent;border-top:.36em solid var(--yellow)}
+  .logo.on-dark{color:#fff}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .nav ul{display:flex;gap:2rem;list-style:none}
+  .nav ul a{text-decoration:none;font-weight:600;color:var(--ink-2)}
+  .nav ul a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:3px;text-underline-offset:6px}
+  .nav .btn{padding:.75rem 1.15rem;font-size:.95rem}
+  .menu-btn{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+  .menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px auto;transition:transform .2s,opacity .2s}
+  .mobile-nav{display:none;border-top:1px solid var(--line);background:#fff}
+  .mobile-nav a{display:block;padding:1rem 24px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--line)}
+  .mobile-nav.open{display:block}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:72px 0 88px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;margin:18px 0 24px}
+  .hero h1 mark{background:linear-gradient(transparent 58%,var(--yellow) 58%);color:inherit;padding:0 .08em}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+  /* Outdoor ilustrado */
+  .billboard{position:relative;padding-bottom:110px}
+  .billboard .board{background:var(--yellow);border:10px solid var(--ink);border-radius:6px;aspect-ratio:16/8;display:flex;flex-direction:column;justify-content:center;padding:8% 9%;box-shadow:0 30px 60px -30px rgba(0,0,0,.35);position:relative;z-index:2}
+  .billboard .board small{font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  .billboard .board strong{font-size:clamp(1.8rem,3.6vw,2.8rem);font-weight:900;line-height:1;letter-spacing:-.03em;margin-top:.35em}
+  .billboard .lamp{position:absolute;top:-26px;width:44px;height:14px;background:var(--ink);border-radius:3px;z-index:3}
+  .billboard .lamp::after{content:"";position:absolute;left:50%;top:14px;width:4px;height:12px;margin-left:-2px;background:var(--ink)}
+  .billboard .lamp.l1{left:22%}.billboard .lamp.l2{right:22%}
+  .billboard .post{position:absolute;bottom:0;width:18px;height:120px;background:var(--ink)}
+  .billboard .post.p1{left:28%}.billboard .post.p2{right:28%}
+  .billboard .ground{position:absolute;bottom:0;left:6%;right:6%;height:2px;background:var(--line)}
+
+  /* ---------- Faixa de meios ---------- */
+  .media-strip{background:var(--ink);color:#fff;padding:26px 0}
+  .media-strip ul{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;list-style:none;font-weight:800;font-size:clamp(1.3rem,3vw,2.1rem);letter-spacing:-.01em}
+  .media-strip li{display:flex;align-items:center;gap:28px}
+  .media-strip li:not(:last-child)::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--yellow)}
+
+  /* ---------- Sobre ---------- */
+  .about{padding:104px 0}
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .about p + p{margin-top:1.1rem}
+  .about .text{font-size:1.15rem;color:var(--ink-2)}
+  .about .text strong{color:var(--ink)}
+
+  /* ---------- Serviços (lista editorial) ---------- */
+  .services{padding:104px 0;background:var(--paper-2)}
+  .services header.sec{position:static;background:none;border:0;backdrop-filter:none;display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+  .service{display:grid;grid-template-columns:80px 1fr 1.2fr;gap:32px;padding:34px 0;border-top:1px solid #D9D5CB;align-items:start}
+  .service:last-child{border-bottom:1px solid #D9D5CB}
+  .service .num{font-weight:800;color:var(--muted);font-size:1rem;padding-top:.45rem}
+  .service h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800}
+  .service p{color:var(--ink-2)}
+  .service .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .service .tags span{font-size:.85rem;font-weight:600;border:1px solid #CFCAC0;border-radius:999px;padding:.3rem .75rem;background:#fff}
+
+  /* ---------- Processo ---------- */
+  .process{padding:104px 0}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px;border-top:3px solid var(--ink)}
+  .step{padding:28px 28px 0 0}
+  .step .n{display:inline-block;background:var(--yellow);font-weight:800;padding:.2rem .6rem;border-radius:6px;font-size:.9rem}
+  .step h3{font-size:1.3rem;font-weight:800;margin:16px 0 10px}
+  .step p{color:var(--ink-2);font-size:.98rem}
+
+  /* ---------- Diferenciais ---------- */
+  .why{background:var(--ink);color:#fff;padding:104px 0}
+  .why .eyebrow{color:#A8A8A8}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:8px}
+  .why ul{list-style:none;display:grid;gap:26px}
+  .why li{padding-left:28px;position:relative}
+  .why li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;background:var(--yellow);border-radius:3px}
+  .why li strong{display:block;font-size:1.2rem;margin-bottom:4px}
+  .why li span{color:#C9C9C9}
+
+  /* ---------- Contato ---------- */
+  .contact{padding:104px 0;background:var(--yellow)}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .contact h2{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900}
+  .contact .lead{color:var(--ink)}
+  .direct{margin-top:32px;display:grid;gap:12px}
+  .direct a{display:flex;align-items:center;gap:12px;font-weight:700;text-decoration:none;font-size:1.05rem}
+  .direct a:hover{text-decoration:underline}
+  .direct svg{width:22px;height:22px}
+  form{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:0 20px 50px -30px rgba(0,0,0,.4)}
+  .field{display:grid;gap:6px;margin-bottom:16px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{font-weight:600;font-size:.92rem}
+  input,select,textarea{font:inherit;font-size:1rem;padding:.85rem .95rem;border:1.5px solid #D6D2C8;border-radius:10px;background:#fff;color:var(--ink);width:100%}
+  textarea{resize:vertical;min-height:96px}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(255,194,14,.45)}
+  .invalid{border-color:#C62828 !important}
+  form .btn{width:100%;justify-content:center;margin-top:6px}
+  .form-note{font-size:.85rem;color:var(--muted);margin-top:12px;text-align:center}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#C9C9C9;padding:56px 0 32px}
+  .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+  .foot p{margin-top:12px;max-width:26rem}
+  .foot nav{display:flex;gap:24px;flex-wrap:wrap}
+  .foot nav a{text-decoration:none;font-weight:600;color:#fff}
+  .foot nav a:hover{color:var(--yellow)}
+  .legal{border-top:1px solid #2E2E2E;margin-top:40px;padding-top:24px;font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* ---------- WhatsApp flutuante ---------- */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 25px -8px rgba(0,0,0,.45);transition:transform .2s}
+  .wa-float:hover{transform:scale(1.06)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+  /* ---------- Responsivo ---------- */
+  @media (max-width:960px){
+    .hero-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+    .billboard{max-width:520px}
+    .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+    .service{grid-template-columns:56px 1fr;gap:12px 20px}
+    .service p,.service .tags{grid-column:2}
+  }
+  @media (max-width:760px){
+    .nav ul,.nav .btn{display:none}
+    .menu-btn{display:block}
+    .hero{padding:48px 0 64px}
+    .about,.services,.process,.why,.contact{padding:72px 0}
+    .media-strip ul{justify-content:flex-start}
+    .media-strip li{gap:18px}
+    .row{grid-template-columns:1fr}
+    form{padding:24px}
+  }
+  @media (max-width:520px){
+    .steps{grid-template-columns:1fr}
+    .step{padding-right:0}
+    .service{grid-template-columns:1fr}
+    .service p,.service .tags{grid-column:1}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float{transition:none}}
+</style>
 </head>
-<body class="bg-brand-black text-white font-sans antialiased selection:bg-brand-yellow selection:text-brand-black custom-scrollbar">
+<body>
 
-    <header id="main-header" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-brand-black/90 backdrop-blur-md border-b border-brand-grayDark/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#inicio" class="flex items-center gap-2 group">
-                <div class="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center font-black text-brand-black text-xl group-hover:scale-105 transition-transform shadow-md">
-                    F
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-black text-xl tracking-wider text-white leading-none font-display">
-                        FALECOM<span class="text-brand-yellow">.OOH</span>
-                    </span>
-                    <span class="text-[10px] tracking-widest text-brand-muted uppercase font-semibold mt-1">Estratégias Out Of Home</span>
-                </div>
-            </a>
+<header>
+  <div class="wrap nav">
+    <a href="#topo" class="logo" aria-label="FaleCom Propaganda — início">Fale<span class="bubble">com</span></a>
+    <ul>
+      <li><a href="#sobre">Quem somos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="btn btn-dark">FaleCom a gente</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu">
+    <a href="#sobre">Quem somos</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#como-trabalhamos">Como trabalhamos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a href="#inicio" class="hover:text-brand-yellow transition-colors">Início</a>
-                <a href="#produtos" class="hover:text-brand-yellow transition-colors">Mídias OOH</a>
-                <a href="#assessoria" class="hover:text-brand-yellow transition-colors">Nossa Assessoria</a>
-                <a href="#simulador" class="hover:text-brand-yellow transition-colors">Simulador</a>
-                <a href="#numeros" class="hover:text-brand-yellow transition-colors">Números</a>
-                <a href="#artigos" class="hover:text-brand-yellow transition-colors">Artigos</a>
-            </nav>
-
-            <!-- CTA Header Button -->
-            <div class="hidden sm:flex items-center gap-4">
-                <button onclick="openConsultantModal('Geral - Header')" class="bg-brand-yellow hover:bg-brand-yellowHover text-brand-black font-bold px-5 py-2.5 rounded-lg transition-all yellow-glow-sm flex items-center gap-2 text-sm">
-                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                    Falar com Consultor
-                </button>
-            </div>
-
-            <!-- Mobile menu button -->
-            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 text-white hover:text-brand-yellow">
-                <i data-lucide="menu" id="menu-icon-open" class="w-7 h-7"></i>
-                <i data-lucide="x" id="menu-icon-close" class="w-7 h-7 hidden"></i>
-            </button>
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Estratégia de mídia</p>
+        <h1>Sua marca no lugar certo, na hora certa, para <mark>quem importa</mark>.</h1>
+        <p class="lead">Planejamento personalizado de mídia em OOH, TV, rádio, online e eventos. A gente escolhe os meios, negocia com os veículos e acompanha cada etapa da sua campanha.</p>
+        <div class="actions">
+          <a href="#contato" class="btn btn-yellow">Quero planejar minha campanha
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#servicos" class="btn btn-line">Ver serviços</a>
         </div>
+      </div>
 
-        <!-- Mobile dropdown menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-b border-brand-grayDark px-6 py-6 flex-col gap-4 text-base">
-            <a href="#inicio" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Início</a>
-            <a href="#produtos" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Mídias OOH & Produtos</a>
-            <a href="#assessoria" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Nossa Assessoria</a>
-            <a href="#simulador" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Simulador de Campanha</a>
-            <a href="#numeros" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Números & Impacto</a>
-            <a href="#artigos" onclick="toggleMobileMenu()" class="hover:text-brand-yellow py-2 border-b border-brand-grayDark/40">Artigos & Tendências</a>
-            <button onclick="toggleMobileMenu(); openConsultantModal('Geral - Mobile Menu')" class="bg-brand-yellow text-brand-black font-bold py-3 rounded-lg w-full mt-2 flex items-center justify-center gap-2">
-                <i data-lucide="phone-call" class="w-5 h-5"></i>
-                Falar com Consultor Especialista
-            </button>
+      <div class="billboard" aria-hidden="true">
+        <span class="lamp l1"></span><span class="lamp l2"></span>
+        <div class="board">
+          <small>Espaço reservado para</small>
+          <strong>a sua marca.</strong>
         </div>
-    </header>
-
-    <section id="inicio" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-brand-black bg-grid-pattern overflow-hidden">
-        <!-- Visual Backdrop Lighting Effects -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-yellow/10 rounded-full blur-[140px] pointer-events-none"></div>
-        <div class="absolute bottom-10 left-10 w-80 h-80 bg-yellow-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Hero Left Column: Copy & CTAs -->
-                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-dark border border-brand-yellow/30 text-brand-yellow text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-brand-yellow animate-ping"></span>
-                        Assessoria Estratégica Independente em Mídia OOH
-                    </div>
-
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-display">
-                        Conecte sua marca às ruas com <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-yellow-500">máxima assertividade</span>.
-                    </h1>
-
-                    <p class="text-lg sm:text-xl text-brand-muted max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
-                        Não vendemos apenas espaço publicitário. Planejamos, negociamos e auditamos estratégias em <strong>Outdoor, DOOH, Busdoor, Malls, Metrô e Rádio</strong> para garantir o maior ROI para seu investimento urbano.
-                    </p>
-
-                    <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <button onclick="openConsultantModal('Hero Principal')" class="w-full sm:w-auto bg-brand-yellow hover:bg-brand-yellowHover text-brand-black font-extrabold text-base px-8 py-4 rounded-xl transition-all duration-300 yellow-glow hover:scale-105 flex items-center justify-center gap-3">
-                            <i data-lucide="user-check" class="w-5 h-5"></i>
-                            Falar com Consultor Especialista
-                        </button>
-
-                        <a href="#produtos" class="w-full sm:w-auto bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark hover:border-brand-yellow/50 text-white font-semibold text-base px-7 py-4 rounded-xl transition-all flex items-center justify-center gap-2">
-                            Explorar Mídias & Formatos
-                            <i data-lucide="arrow-down-right" class="w-5 h-5 text-brand-yellow"></i>
-                        </a>
-                    </div>
-
-                    <!-- Key Trust Highlights -->
-                    <div class="pt-6 border-t border-brand-grayDark/60 grid grid-cols-3 gap-4 text-center lg:text-left">
-                        <div>
-                            <div class="text-2xl font-bold text-white font-display">100%</div>
-                            <div class="text-xs text-brand-muted mt-0.5">Isenção & Foco no seu ROI</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold text-white font-display">+15k</div>
-                            <div class="text-xs text-brand-muted mt-0.5">Pontos OOH Mapeados</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold text-white font-display">Nacional</div>
-                            <div class="text-xs text-brand-muted mt-0.5">Cobertura em todo o Brasil</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Right Column: Interactive Showcase Teaser -->
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none bg-brand-card/90 border border-brand-grayDark rounded-2xl p-6 shadow-2xl backdrop-blur-xl">
-                        <div class="flex items-center justify-between pb-4 border-b border-brand-grayDark">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-red-500"></span>
-                                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-                                <span class="w-3 h-3 rounded-full bg-green-500"></span>
-                            </div>
-                            <span class="text-xs font-mono text-brand-yellow bg-brand-black/60 px-2.5 py-1 rounded border border-brand-yellow/20">LIVE MAP ADVISORY</span>
-                        </div>
-
-                        <div class="py-6 space-y-4">
-                            <div class="p-4 rounded-xl bg-brand-dark/80 border border-brand-grayDark flex items-start gap-3">
-                                <div class="p-2.5 rounded-lg bg-brand-yellow/10 text-brand-yellow">
-                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-sm text-white">Geolocalização Inteligente</h4>
-                                    <p class="text-xs text-brand-muted mt-1">Cruzamos fluxo de veículos, pedestres e dados demográficos do seu público-alvo.</p>
-                                </div>
-                            </div>
-
-                            <div class="p-4 rounded-xl bg-brand-dark/80 border border-brand-grayDark flex items-start gap-3">
-                                <div class="p-2.5 rounded-lg bg-brand-yellow/10 text-brand-yellow">
-                                    <i data-lucide="pie-chart" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-sm text-white">Mix Multi-Formato Unificado</h4>
-                                    <p class="text-xs text-brand-muted mt-1">Unificamos Outdoor, DOOH, Busdoor e Mídia Indoor em uma única estratégia integrada.</p>
-                                </div>
-                            </div>
-
-                            <div class="p-4 rounded-xl bg-brand-dark/80 border border-brand-grayDark flex items-start gap-3">
-                                <div class="p-2.5 rounded-lg bg-brand-yellow/10 text-brand-yellow">
-                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-sm text-white">Auditoria & Checking Fotográfico</h4>
-                                    <p class="text-xs text-brand-muted mt-1">Garantia absoluta de veiculação e monitoramento do seu investimento em tempo real.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-xl bg-gradient-to-r from-brand-yellow/20 to-amber-500/10 border border-brand-yellow/40 flex items-center justify-between">
-                            <div>
-                                <span class="text-xs text-brand-muted block">Quer entender como otimizar seu orçamento?</span>
-                                <span class="text-sm font-bold text-brand-yellow">Agende um diagnóstico gratuito</span>
-                            </div>
-                            <button onclick="openConsultantModal('Diagnostico Hero Card')" class="p-2 bg-brand-yellow text-brand-black rounded-lg hover:scale-110 transition-transform">
-                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="produtos" class="py-24 bg-brand-dark border-t border-brand-grayDark/60 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-brand-yellow font-semibold text-sm uppercase tracking-widest">Catálogo Integrado OOH</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 font-display">Nossos Produtos & Soluções em Mídia</h2>
-                <p class="text-brand-muted mt-4 text-base sm:text-lg">
-                    Conheça a amplitude de formatos gerenciados pela FALECOM. Selecione uma categoria para filtrar ou clique para ver especificações e cotar direto com o consultor.
-                </p>
-            </div>
-
-            <!-- Filter Tabs -->
-            <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="filter-buttons">
-                <button onclick="filterMedia('todos', this)" class="filter-btn active bg-brand-yellow text-brand-black font-bold px-5 py-2 rounded-full text-sm transition-all shadow-md">
-                    Todos os Formatos
-                </button>
-                <button onclick="filterMedia('urbana', this)" class="filter-btn bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark text-brand-muted hover:text-white font-medium px-5 py-2 rounded-full text-sm transition-all">
-                    Rua & Rodovias
-                </button>
-                <button onclick="filterMedia('transporte', this)" class="filter-btn bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark text-brand-muted hover:text-white font-medium px-5 py-2 rounded-full text-sm transition-all">
-                    Transportes & Bus
-                </button>
-                <button onclick="filterMedia('digital', this)" class="filter-btn bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark text-brand-muted hover:text-white font-medium px-5 py-2 rounded-full text-sm transition-all">
-                    Painéis Digitais (DOOH)
-                </button>
-                <button onclick="filterMedia('indoor', this)" class="filter-btn bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark text-brand-muted hover:text-white font-medium px-5 py-2 rounded-full text-sm transition-all">
-                    Malls, Elevadores & Indoor
-                </button>
-                <button onclick="filterMedia('audio', this)" class="filter-btn bg-brand-card hover:bg-brand-grayDark border border-brand-grayDark text-brand-muted hover:text-white font-medium px-5 py-2 rounded-full text-sm transition-all">
-                    Rádio & Áudio
-                </button>
-            </div>
-
-            <!-- Media Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="media-cards-grid">
-                <!-- Javascript will inject or show/hide items below -->
-            </div>
-
-            <div class="mt-14 text-center bg-brand-card border border-brand-grayDark p-8 rounded-2xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-                <div class="text-left">
-                    <h3 class="text-xl font-bold text-white">Não encontrou o formato específico da sua região?</h3>
-                    <p class="text-sm text-brand-muted mt-1">Mapeamos veículos regionais e formatos exclusivos sob demanda para a sua estratégia.</p>
-                </div>
-                <button onclick="openConsultantModal('Consulta Formato Personalizado')" class="whitespace-nowrap bg-brand-yellow hover:bg-brand-yellowHover text-brand-black font-extrabold px-6 py-3.5 rounded-xl transition-all text-sm flex items-center gap-2 yellow-glow-sm">
-                    <i data-lucide="search" class="w-4 h-4"></i>
-                    Consultar Veículo Customizado
-                </button>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="assessoria" class="py-24 bg-brand-black relative border-t border-brand-grayDark/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-5 space-y-6">
-                    <span class="text-brand-yellow font-semibold text-sm uppercase tracking-widest">Por que contratar uma consultoria OOH?</span>
-                    <h2 class="text-3xl sm:text-5xl font-black text-white font-display leading-tight">
-                        Independência para defender seu orçamento.
-                    </h2>
-                    <p class="text-brand-muted leading-relaxed">
-                        Exibir marcas sem planejamento geográfico gera desperdício de verba. Como **assessoria estratégica independente**, não favorecemos um veículo específico: escolhemos os pontos com maior densidade do seu público-alvo.
-                    </p>
-
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow flex items-center justify-center shrink-0">
-                                <i data-lucide="dollar-sign" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-base font-bold text-white">Poder de Negociação em Escala</h4>
-                                <p class="text-xs text-brand-muted mt-1">Consolidamos volume de compras junto aos exibidores de todo o Brasil para obter as melhores tabelas.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow flex items-center justify-center shrink-0">
-                                <i data-lucide="target" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-base font-bold text-white">Foco na Jornada do Consumidor</h4>
-                                <p class="text-xs text-brand-muted mt-1">Impactamos o seu cliente na ida ao trabalho, no elevador comercial, no shopping e no trajeto para casa.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4">
-                        <button onclick="openConsultantModal('Assessoria Diferenciais')" class="bg-brand-yellow text-brand-black font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 hover:bg-brand-yellowHover transition-all">
-                            <i data-lucide="sliders" class="w-4 h-4"></i>
-                            Solicitar Análise de Mídia Atual
-                        </button>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7">
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        
-                        <!-- Step 1 -->
-                        <div class="bg-brand-card border border-brand-grayDark p-6 rounded-2xl relative hover:border-brand-yellow/40 transition-colors group">
-                            <div class="text-4xl font-black text-brand-yellow/20 group-hover:text-brand-yellow/40 transition-colors absolute top-4 right-4 font-display">01</div>
-                            <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center text-brand-yellow mb-4 border border-brand-grayDark">
-                                <i data-lucide="map" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-white mb-2">1. Diagnóstico & Geoanalytics</h3>
-                            <p class="text-xs text-brand-muted leading-relaxed">
-                                Mapeamos o perfil do seu público (Classes A/B/C, hábitos de consumo e trajetos urbanos) para definir as áreas de alta relevância.
-                            </p>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="bg-brand-card border border-brand-grayDark p-6 rounded-2xl relative hover:border-brand-yellow/40 transition-colors group">
-                            <div class="text-4xl font-black text-brand-yellow/20 group-hover:text-brand-yellow/40 transition-colors absolute top-4 right-4 font-display">02</div>
-                            <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center text-brand-yellow mb-4 border border-brand-grayDark">
-                                <i data-lucide="layers" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-white mb-2">2. Planejamento do Mix de Veículos</h3>
-                            <p class="text-xs text-brand-muted leading-relaxed">
-                                Selecionamos a combinação ideal entre mídia de impacto (Outdoor/DOOH) e mídia de frequência (Busdoor/Elevadores/Radio).
-                            </p>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="bg-brand-card border border-brand-grayDark p-6 rounded-2xl relative hover:border-brand-yellow/40 transition-colors group">
-                            <div class="text-4xl font-black text-brand-yellow/20 group-hover:text-brand-yellow/40 transition-colors absolute top-4 right-4 font-display">03</div>
-                            <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center text-brand-yellow mb-4 border border-brand-grayDark">
-                                <i data-lucide="file-text" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-white mb-2">3. Negociação & Compra Eficiente</h3>
-                            <p class="text-xs text-brand-muted leading-relaxed">
-                                Negociamos diretamente com todos os exibidores locais e nacionais, garantindo prazos, custos otimizados e reserva de pontos nobres.
-                            </p>
-                        </div>
-
-                        <!-- Step 4 -->
-                        <div class="bg-brand-card border border-brand-grayDark p-6 rounded-2xl relative hover:border-brand-yellow/40 transition-colors group">
-                            <div class="text-4xl font-black text-brand-yellow/20 group-hover:text-brand-yellow/40 transition-colors absolute top-4 right-4 font-display">04</div>
-                            <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center text-brand-yellow mb-4 border border-brand-grayDark">
-                                <i data-lucide="check-circle-2" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-white mb-2">4. Auditoria & Checking Fotográfico</h3>
-                            <p class="text-xs text-brand-muted leading-relaxed">
-                                Acompanhamos a instalação de cada peça e enviamos relatórios fotográficos e de métricas para comprovação total de veiculação.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="simulador" class="py-24 bg-brand-dark border-t border-brand-grayDark/60 relative">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-brand-card border border-brand-yellow/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
-                <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
-
-                <div class="text-center max-w-2xl mx-auto mb-8">
-                    <span class="text-brand-yellow text-xs font-bold uppercase tracking-widest bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">Ferramenta Interativa</span>
-                    <h2 class="text-2xl sm:text-4xl font-black text-white mt-3 font-display">Simulador de Campanha OOH</h2>
-                    <p class="text-xs sm:text-sm text-brand-muted mt-2">
-                        Selecione os parâmetros da sua campanha para receber uma estimativa personalizada da nossa equipe técnica.
-                    </p>
-                </div>
-
-                <!-- Wizard Form Step Controls -->
-                <form id="simulator-form" onsubmit="handleSimulatorSubmit(event)" class="space-y-6">
-                    <div class="grid md:grid-cols-3 gap-6">
-                        
-                        <!-- Region Input -->
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">1. Região / Cidade Alvo</label>
-                            <input type="text" id="sim-location" placeholder="Ex: São Paulo - SP, Capital e ABC" required class="w-full bg-brand-dark border border-brand-grayDark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow transition-colors">
-                        </div>
-
-                        <!-- Objective -->
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">2. Objetivo Principal</label>
-                            <select id="sim-objective" required class="w-full bg-brand-dark border border-brand-grayDark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow transition-colors">
-                                <option value="">Selecione um objetivo</option>
-                                <option value="Branding e Reconhecimento de Marca">Branding & Grande Cobertura</option>
-                                <option value="Lançamento de Produto / Evento">Lançamento / Evento com Data</option>
-                                <option value="Tráfego para Loja Física / Ponto de Venda">Direcionamento para Loja Física</option>
-                                <option value="Fortalecimento B2B / Executivo">Público Executivo / B2B</option>
-                            </select>
-                        </div>
-
-                        <!-- Media Format Preferred -->
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">3. Formato Preferencial</label>
-                            <select id="sim-format" required class="w-full bg-brand-dark border border-brand-grayDark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow transition-colors">
-                                <option value="Recomendação do Consultor (Mix Ideal)">Deixar a FALECOM Recomendar (Mix)</option>
-                                <option value="Outdoor e Grandes Painéis">Outdoor / Mega Painéis</option>
-                                <option value="Painéis Digitais LED (DOOH)">Painéis Digitais (DOOH)</option>
-                                <option value="Busdoor e Cobertura de Frota">Busdoor / Mídia em Ônibus</option>
-                                <option value="Shoppings, Malls e Metrô">Malls, Shoppings e Metrô</option>
-                                <option value="Mídia Indoor e Elevadores Executivos">Elevadores Executivos & Academias</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6 pt-2">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">4. Seu Nome & Empresa</label>
-                            <input type="text" id="sim-name" placeholder="Ex: Carlos Silva (Empresa XYZ)" required class="w-full bg-brand-dark border border-brand-grayDark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">5. WhatsApp / Telefone para Resposta</label>
-                            <input type="tel" id="sim-phone" placeholder="(11) 99999-9999" required class="w-full bg-brand-dark border border-brand-grayDark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow transition-colors">
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-4">
-                        <button type="submit" class="w-full sm:w-auto bg-brand-yellow hover:bg-brand-yellowHover text-brand-black font-extrabold text-base px-10 py-4 rounded-xl transition-all yellow-glow hover:scale-105 inline-flex items-center justify-center gap-2">
-                            <i data-lucide="calculator" class="w-5 h-5"></i>
-                            Gerar Simulação & Enviar ao Consultor
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="numeros" class="py-20 bg-brand-black border-t border-brand-grayDark/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-brand-yellow font-semibold text-sm uppercase tracking-widest">Nossa Presença & Resultados</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 font-display">Números que Comprovam a Eficiência</h2>
-            </div>
-
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                
-                <div class="bg-brand-card border border-brand-grayDark p-8 rounded-2xl hover:border-brand-yellow/40 transition-all">
-                    <div class="text-4xl sm:text-5xl font-black text-brand-yellow font-display counter" data-target="15000">+15.000</div>
-                    <div class="text-sm font-semibold text-white mt-2">Pontos Mapeados no Brasil</div>
-                    <div class="text-xs text-brand-muted mt-1">Acesso direto a exibidores em todas as capitais e interior.</div>
-                </div>
-
-                <div class="bg-brand-card border border-brand-grayDark p-8 rounded-2xl hover:border-brand-yellow/40 transition-all">
-                    <div class="text-4xl sm:text-5xl font-black text-brand-yellow font-display counter" data-target="98">98%</div>
-                    <div class="text-sm font-semibold text-white mt-2">Precisão de Cobertura</div>
-                    <div class="text-xs text-brand-muted mt-1">Estratégias validadas por densidade demográfica.</div>
-                </div>
-
-                <div class="bg-brand-card border border-brand-grayDark p-8 rounded-2xl hover:border-brand-yellow/40 transition-all">
-                    <div class="text-4xl sm:text-5xl font-black text-brand-yellow font-display counter" data-target="10">+10 Anos</div>
-                    <div class="text-sm font-semibold text-white mt-2">Expertise de Mercado</div>
-                    <div class="text-xs text-brand-muted mt-1">Consultoria de alto nível focada em anunciantes.</div>
-                </div>
-
-                <div class="bg-brand-card border border-brand-grayDark p-8 rounded-2xl hover:border-brand-yellow/40 transition-all">
-                    <div class="text-4xl sm:text-5xl font-black text-brand-yellow font-display counter" data-target="350">+350</div>
-                    <div class="text-sm font-semibold text-white mt-2">Campanhas Gerenciadas</div>
-                    <div class="text-xs text-brand-muted mt-1">Comprovadas com auditoria fotográfica.</div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="artigos" class="py-24 bg-brand-dark border-t border-brand-grayDark/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div>
-                    <span class="text-brand-yellow font-semibold text-sm uppercase tracking-widest">Inteligência de Mercado</span>
-                    <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 font-display">Artigos & Tendências em OOH</h2>
-                </div>
-                <p class="text-brand-muted text-sm max-w-md mt-4 md:mt-0">
-                    Mantenha sua equipe atualizada com os melhores insights sobre mídias físicas, digitais, métricas de circulação e métricas de ROI.
-                </p>
-            </div>
-
-            <!-- Articles Grid -->
-            <div class="grid md:grid-cols-3 gap-8" id="articles-grid">
-                <!-- Injected via JS below -->
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-20 bg-brand-black border-t border-brand-grayDark/60 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="bg-gradient-to-r from-brand-yellow via-amber-400 to-yellow-500 rounded-3xl p-8 sm:p-14 text-brand-black text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
-                <div class="max-w-2xl">
-                    <h2 class="text-3xl sm:text-4xl font-black font-display leading-tight">
-                        Pronto para colocar sua marca em evidência nos melhores pontos da cidade?
-                    </h2>
-                    <p class="text-brand-black/80 font-medium text-base mt-3">
-                        Agende uma conversa técnica sem compromisso com nossos estrategistas. Analisamos seu plano atual e mostramos como otimizar seu alcance.
-                    </p>
-                </div>
-                <button onclick="openConsultantModal('CTA Final Rodapé')" class="bg-brand-black hover:bg-brand-dark text-brand-yellow font-extrabold text-base px-8 py-4 rounded-xl transition-all shadow-xl hover:scale-105 whitespace-nowrap flex items-center gap-2">
-                    <i data-lucide="phone-call" class="w-5 h-5 text-brand-yellow"></i>
-                    Falar com um Consultor Agora
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-brand-black text-brand-muted text-sm border-t border-brand-grayDark py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
-                <div class="space-y-4">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 bg-brand-yellow rounded-md flex items-center justify-center font-black text-brand-black text-lg">
-                            F
-                        </div>
-                        <span class="font-black text-lg text-white font-display">FALECOM<span class="text-brand-yellow">.OOH</span></span>
-                    </div>
-                    <p class="text-xs leading-relaxed text-brand-muted">
-                        Consultoria e Assessoria Especializada em Estratégias Out of Home (OOH) e Digital Out of Home (DOOH) para marcas que buscam alta relevância urbana.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 text-sm">Nossas Soluções</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#produtos" class="hover:text-brand-yellow transition-colors">Outdoor & Bi-semanas</a></li>
-                        <li><a href="#produtos" class="hover:text-brand-yellow transition-colors">Painéis Digitais (DOOH)</a></li>
-                        <li><a href="#produtos" class="hover:text-brand-yellow transition-colors">Busdoor & Transporte</a></li>
-                        <li><a href="#produtos" class="hover:text-brand-yellow transition-colors">Shoppings & Indoor Executivo</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 text-sm">Navegação</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#inicio" class="hover:text-brand-yellow transition-colors">Início</a></li>
-                        <li><a href="#assessoria" class="hover:text-brand-yellow transition-colors">Nossa Assessoria</a></li>
-                        <li><a href="#simulador" class="hover:text-brand-yellow transition-colors">Simulador OOH</a></li>
-                        <li><a href="#artigos" class="hover:text-brand-yellow transition-colors">Artigos & Tendências</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 text-sm">Contato Direto</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-brand-yellow"></i>
-                            contato@falecompropaganda.com.br
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-brand-yellow"></i>
-                            (11) 98888-7777 / (11) 3456-7890
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow"></i>
-                            Atendimento Nacional - Brasil
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="border-t border-brand-grayDark/60 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-muted">
-                <p>&copy; 2026 FALECOM PROPAGANDA - Todos os direitos reservados. Assessoria Independente de Mídia OOH.</p>
-                <div class="flex gap-4 mt-2 sm:mt-0">
-                    <a href="#" class="hover:text-brand-yellow">Termos de Uso</a>
-                    <a href="#" class="hover:text-brand-yellow">Privacidade</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <button onclick="openConsultantModal('Botao Flutuante WhatsApp')" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center gap-2 border-2 border-white/20">
-        <i data-lucide="message-circle" class="w-7 h-7"></i>
-        <span class="hidden md:inline font-bold text-sm pr-1">Falar com Consultor</span>
-    </button>
-
-    <div id="media-detail-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-brand-card border border-brand-grayDark rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto custom-scrollbar">
-            <button onclick="closeMediaModal()" class="absolute top-4 right-4 text-brand-muted hover:text-white p-2">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-
-            <div id="media-modal-content">
-                <!-- Dynamically filled by JS -->
-            </div>
-        </div>
+        <span class="post p1"></span><span class="post p2"></span>
+        <span class="ground"></span>
+      </div>
     </div>
+  </section>
 
-    <div id="article-detail-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-brand-card border border-brand-grayDark rounded-2xl max-w-3xl w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto custom-scrollbar">
-            <button onclick="closeArticleModal()" class="absolute top-4 right-4 text-brand-muted hover:text-white p-2">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-
-            <div id="article-modal-content">
-                <!-- Dynamically filled by JS -->
-            </div>
-        </div>
+  <!-- FAIXA DE MEIOS -->
+  <div class="media-strip">
+    <div class="wrap">
+      <ul aria-label="Meios com que trabalhamos">
+        <li>OOH</li><li>TV</li><li>Rádio</li><li>Online</li><li>Eventos</li>
+      </ul>
     </div>
+  </div>
 
-    <div id="consultant-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-brand-card border border-brand-yellow/40 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
-            <button onclick="closeConsultantModal()" class="absolute top-4 right-4 text-brand-muted hover:text-white p-2">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-
-            <div class="text-center mb-6">
-                <div class="w-12 h-12 bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <i data-lucide="user-check" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-2xl font-black text-white font-display">Falar com Consultor OOH</h3>
-                <p class="text-xs text-brand-muted mt-1" id="consultant-modal-origin">Atendimento direto sobre estratégias e contratação de mídia.</p>
-            </div>
-
-            <form onsubmit="handleConsultantFormSubmit(event)" class="space-y-4">
-                <input type="hidden" id="modal-origin-input" value="Geral">
-                
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Seu Nome *</label>
-                    <input type="text" id="modal-name" required placeholder="Digite seu nome completo" class="w-full bg-brand-dark border border-brand-grayDark rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-yellow">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Empresa / Marca *</label>
-                    <input type="text" id="modal-company" required placeholder="Nome da sua empresa" class="w-full bg-brand-dark border border-brand-grayDark rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-yellow">
-                </div>
-
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">WhatsApp / Celular *</label>
-                        <input type="tel" id="modal-phone" required placeholder="(11) 99999-9999" class="w-full bg-brand-dark border border-brand-grayDark rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-yellow">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">E-mail Corporativo</label>
-                        <input type="email" id="modal-email" placeholder="seu@email.com.br" class="w-full bg-brand-dark border border-brand-grayDark rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-yellow">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Qual mídia ou dúvida principal?</label>
-                    <textarea id="modal-message" rows="3" placeholder="Ex: Preciso de cotação de Outdoor e Busdoor na região de Campinas..." class="w-full bg-brand-dark border border-brand-grayDark rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-yellow"></textarea>
-                </div>
-
-                <button type="submit" class="w-full bg-brand-yellow hover:bg-brand-yellowHover text-brand-black font-extrabold py-3.5 rounded-xl transition-all yellow-glow flex items-center justify-center gap-2 text-sm">
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                    Iniciar Conversa no WhatsApp
-                </button>
-
-                <p class="text-[11px] text-center text-brand-muted mt-2">
-                    Nossos consultores retornam em média em até 15 minutos em horário comercial.
-                </p>
-            </form>
-        </div>
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">Quem somos</p>
+        <h2 style="margin-top:14px">Planejamento de mídia feito sob medida.</h2>
+      </div>
+      <div class="text">
+        <p>A <strong>FaleCom Propaganda</strong> é uma agência de estratégia de mídia. Nosso trabalho é entender o que a sua marca precisa comunicar, para quem e onde, e transformar isso em um plano de mídia que faça sentido para o seu orçamento.</p>
+        <p>Não trabalhamos com pacote pronto. Cada campanha começa do zero: o público, a região, o momento da marca. A partir daí combinamos os meios certos, seja um outdoor na avenida certa, um spot na rádio que o seu cliente ouve ou uma presença de marca em um evento.</p>
+      </div>
     </div>
+  </section>
 
-    <div id="toast-container" class="fixed top-24 right-5 z-50 flex flex-col gap-3 pointer-events-none"></div>
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="wrap">
+      <header class="sec">
+        <div>
+          <p class="eyebrow">Serviços</p>
+          <h2 style="margin-top:14px">Todos os meios, uma só estratégia.</h2>
+        </div>
+        <p class="lead" style="max-width:26rem">Planejamos cada meio separadamente ou em conjunto, sempre pensando na campanha como um todo.</p>
+      </header>
 
-    <script>
-        // Media Products Database
-        const oohProducts = [
-            {
-                id: 'outdoor',
-                category: 'urbana',
-                title: 'Outdoor Bi-Semana (Estático)',
-                icon: 'image',
-                shortDesc: 'A mídia urbana mais tradicional para grande cobertura e fixação de marca em avenidas e rodovias.',
-                spec: 'Papel ou Lona / 9x3m (Padrão)',
-                useCases: 'Campanhas de branding massivo, varejo, lançamentos e promoções de curto/médio prazo.',
-                benefits: ['Alta frequência de visualização', 'Custo por mil (CPM) extremamente baixo', 'Ampla cobertura geográfica simultânea']
-            },
-            {
-                id: 'busdoor',
-                category: 'transporte',
-                title: 'Busdoor & Wrap em Ônibus',
-                icon: 'bus',
-                shortDesc: 'Mídia itinerante que percorre as principais linhas e bairros da cidade com alto impacto visual.',
-                spec: 'Traseira Total (Rear-door) ou Envelopamento',
-                useCases: 'Garantir presença nos bairros residenciais e corredores de transporte de passageiros.',
-                benefits: ['Anúncio em constante movimento', 'Impacta motoristas e pedestres', 'Grande capilaridade nos bairros']
-            },
-            {
-                id: 'paineis-led',
-                category: 'digital',
-                title: 'Painéis LED & DOOH Urbanos',
-                icon: 'tv',
-                shortDesc: 'Telas digitais de alta resolução em pontos estratégicos com troca rápida de criativos.',
-                spec: 'Vídeos/Animações de 10s ou 15s',
-                useCases: 'Campanhas dinâmicas, ofertas com contagem regressiva, conteúdo adaptável por horário.',
-                benefits: ['Zero custo de produção gráfica/impressão', 'Agilidade na troca de peças', 'Brilho e alto apelo visual noturno']
-            },
-            {
-                id: 'metro-trens',
-                category: 'transporte',
-                title: 'Mídia em Metrô, Trens & VLT',
-                icon: 'train-front',
-                shortDesc: 'Impacto direto em milhões de passageiros em momentos de alta atenção durante o deslocamento.',
-                spec: 'Painéis nas Estações, Adesivação de Vagões, Telas Internas',
-                useCases: 'Marcas de consumo massivo, educação, serviços financeiros e aplicativos.',
-                benefits: ['Tempo de exposição prolongado', 'Público cativo diário', 'Excelente retenção da mensagem']
-            },
-            {
-                id: 'aeroportos',
-                category: 'transporte',
-                title: 'Mídia Aeroportuária',
-                icon: 'plane',
-                shortDesc: 'Formatos premium nos saguões de embarque, desembarque e esteiras de bagagem.',
-                spec: 'Painéis Digitais, Totens e Mega Painéis de Saguão',
-                useCases: 'Público executivo, turismo, mercado imobiliário e marcas de luxo.',
-                benefits: ['Alcança tomadores de decisão (B2B/Classes A e B)', 'Tempo de permanência elevado no portão', 'Percepção de marca de prestígio']
-            },
-            {
-                id: 'shoppings',
-                category: 'indoor',
-                title: 'Mídia em Shoppings & Malls',
-                icon: 'shopping-bag',
-                shortDesc: 'Impacto no ponto final da jornada de compra, próximo às lojas e praças de alimentação.',
-                spec: 'Totens Digitais, Mídia em Sanitários, Elevadores e Cancelas',
-                useCases: 'Aumento de vendas diretas, lançamentos de cinema, marcas de moda e gastronomia.',
-                benefits: ['Público com alta predisposição de consumo', 'Ambiente climatizado e seguro', 'Excelente conversão para o varejo']
-            },
-            {
-                id: 'elevadores-residenciais',
-                category: 'indoor',
-                title: 'Mídia Indoor em Elevadores Executivos',
-                icon: 'building-2',
-                shortDesc: 'Telas digitais instaladas dentro de elevadores de edifícios residenciais e corporativos.',
-                spec: 'Telas Full HD com notícias e anúncios',
-                useCases: 'Serviços locais, delivery, planos de saúde, faculdades e produtos B2B.',
-                benefits: ['Atenção 100% exclusiva durante a viagem', 'Segmentação por perfil socioeconômico do prédio', 'Sem dispersão de público']
-            },
-            {
-                id: 'radio-audio',
-                category: 'audio',
-                title: 'Rádio & Áudio Geo-localizado',
-                icon: 'radio',
-                shortDesc: 'Anúncios em rádios FM e plataformas de áudio integrados ao trajeto do motorista.',
-                spec: 'Spots de 15s/30s e Patrocínios de Hora Certa',
-                useCases: 'Completar o impacto visual do OOH com reforço auditivo durante o trânsito.',
-                benefits: ['Alta sinergia com motoristas no trânsito', 'Gera memória auditiva para a marca', 'Ampla cobertura regional']
-            },
-            {
-                id: 'tv-corporativa-supermercados',
-                category: 'indoor',
-                title: 'TV Corporativa & Supermercados',
-                icon: 'monitor',
-                shortDesc: 'Rede de telas nas filas de caixas de supermercados e recepções de empresas.',
-                spec: 'Vídeos curtos na fila do caixa (Check-out)',
-                useCases: 'Alimentos, bebidas, produtos de limpeza e serviços locais.',
-                benefits: ['Impacto no momento da decisão final da compra', 'Entretenimento durante a espera', 'Alta frequência de visitação']
-            },
-            {
-                id: 'empenas',
-                category: 'urbana',
-                title: 'Empenas Cegas & Mega Painéis',
-                icon: 'building',
-                shortDesc: 'Grandes estruturas laterais em prédios de grande circulação com visibilidade monumental.',
-                spec: 'Lonas Gigantes iluminações por Spot',
-                useCases: 'Campanhas de branding institucional marcantes que viram ponto de referência.',
-                benefits: ['Presença de marca monumental', 'Visibilidade de longa distância', 'Status e reputação no ecossistema urbano']
-            },
-            {
-                id: 'mobiliario-urbano',
-                category: 'urbana',
-                title: 'Mobiliário Urbano (MUB / Relógios)',
-                icon: 'clock',
-                shortDesc: 'Relógios digitais de rua e abrigos de ônibus no nível dos olhos dos pedestres e motoristas.',
-                spec: 'Painéis e Relógios com horário/temperatura',
-                useCases: 'Campanhas de cobertura rápida nas áreas centrais das cidades.',
-                benefits: ['Integração harmoniosa com a arquitetura da cidade', 'Nível dos olhos do pedestre', 'Altíssima repetição diária']
-            }
-        ];
+      <article class="service">
+        <span class="num">01</span>
+        <h3>OOH</h3>
+        <div>
+          <p>Mídia exterior para a marca estar presente no trajeto do público. Mapeamos os pontos de maior fluxo e escolhemos o formato ideal para cada objetivo.</p>
+          <div class="tags"><span>Outdoor</span><span>Painéis de LED</span><span>Front-light</span><span>Mídia urbana</span><span>Busdoor</span></div>
+        </div>
+      </article>
 
-        // Articles Database
-        const oohArticles = [
-            {
-                id: 1,
-                title: 'Por que o DOOH (Digital Out of Home) é indispensável em 2026?',
-                category: 'Tendências',
-                date: 'Setembro, 2026',
-                summary: 'Entenda como a dinamização de telas, compra programática e dados de geolocalização transformaram os painéis digitais na mídia de maior crescimento urbano.',
-                content: `O Digital Out of Home (DOOH) deixou de ser apenas uma tendência para se tornar pilar central de grandes estratégias de mídia. Com a capacidade de alternar anúncios com base na hora do dia, clima e fluxo do trânsito, as marcas ganham relevância contextual incomparável.
-                <br><br>
-                <strong>Principais Vantagens do DOOH:</strong>
-                <ul class="list-disc pl-5 space-y-1 mt-2">
-                    <li>Flexibilidade de troca de peças em minutos;</li>
-                    <li>Sem custos de impressão ou logística gráfica;</li>
-                    <li>Integração nativa com campanhas digitais e redes sociais;</li>
-                    <li>Altíssima retenção visual por conta do dinamismo das telas.</li>
-                </ul>`
-            },
-            {
-                id: 2,
-                title: 'Como calcular o ROI real da sua campanha de Outdoor',
-                category: 'Métricas',
-                date: 'Agosto, 2026',
-                summary: 'Aprenda a cruzar métricas de OTS (Opportunity to See), geolocalização e incremento de tráfego na sua loja física ou site.',
-                content: `Um dos maiores desafios dos anunciantes é mensurar o retorno exato de uma veiculação de rua. Na FALECOM, utilizamos metodologias modernas de mensuração que combinam fluxo de tráfego veicular, densidade populacional e dados de mobile location.
-                <br><br>
-                <strong>Passos para medir o impacto:</strong>
-                <ol class="list-decimal pl-5 space-y-1 mt-2">
-                    <li>Análise de tráfego base pré-campanha na área de influência do ponto;</li>
-                    <li>Mensuração do aumento de busca pela marca no Google/Waze na região;</li>
-                    <li>Acompanhamento do incremento de vendas nos PDVs num raio de até 3km.</li>
-                </ol>`
-            },
-            {
-                id: 3,
-                title: 'Mídia em Transporte vs. Mídia em Shopping: Qual a melhor?',
-                category: 'Estratégia',
-                date: 'Julho, 2026',
-                summary: 'Análise comparativa sobre a jornada do consumidor para saber onde alocar sua verba com maior eficiência.',
-                content: `A escolha do canal OOH ideal depende fundamentalmente do momento da jornada em que você deseja interceptar o consumidor.
-                <br><br>
-                <strong>Mídia em Transporte (Busdoor, Metrô, Trens):</strong> Ideal para criar grande conhecimento de marca, alcance de massa e repetição diária durante o deslocamento trabalho-casa.
-                <br><br>
-                <strong>Mídia em Shoppings & Malls:</strong> Ideal para atuar no momento de consideração final e intenção de compra imediata, impactando consumidores com poder aquisitivo disponível.`
-            }
-        ];
+      <article class="service">
+        <span class="num">02</span>
+        <h3>TV</h3>
+        <div>
+          <p>Planejamento de inserções em TV aberta e por assinatura, com a escolha de emissoras, programas e horários que conversam com o seu público.</p>
+          <div class="tags"><span>Comerciais</span><span>Inserções regionais</span><span>Patrocínios</span></div>
+        </div>
+      </article>
 
-        // Initialization
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
-            renderMediaCards('todos');
-            renderArticles();
-            initHeaderScroll();
-        });
+      <article class="service">
+        <span class="num">03</span>
+        <h3>Rádio</h3>
+        <div>
+          <p>Spots e patrocínios nas emissoras certas, com frequência planejada para a mensagem ser lembrada.</p>
+          <div class="tags"><span>Spots</span><span>Patrocínio de programas</span><span>Testemunhais</span></div>
+        </div>
+      </article>
 
-        // Navigation Header Background Effect
-        function initHeaderScroll() {
-            const header = document.getElementById('main-header');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('shadow-xl', 'bg-brand-black');
-                } else {
-                    header.classList.remove('shadow-xl');
-                }
-            });
-        }
+      <article class="service">
+        <span class="num">04</span>
+        <h3>Online</h3>
+        <div>
+          <p>Mídia digital integrada ao restante da campanha, para a marca seguir presente também na tela do celular.</p>
+          <div class="tags"><span>Redes sociais</span><span>Portais</span><span>Mídia programática</span></div>
+        </div>
+      </article>
 
-        // Mobile Menu Toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const openIcon = document.getElementById('menu-icon-open');
-            const closeIcon = document.getElementById('menu-icon-close');
-            
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-                menu.classList.add('flex');
-                openIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-                menu.classList.remove('flex');
-                openIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        }
+      <article class="service">
+        <span class="num">05</span>
+        <h3>Eventos</h3>
+        <div>
+          <p>Presença de marca em eventos: patrocínios, ativações e ações que colocam a sua marca frente a frente com o público.</p>
+          <div class="tags"><span>Patrocínio</span><span>Ativações</span><span>Presença de marca</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        // Render Media Cards Grid
-        function renderMediaCards(filter = 'todos') {
-            const grid = document.getElementById('media-cards-grid');
-            grid.innerHTML = '';
+  <!-- COMO TRABALHAMOS -->
+  <section class="process" id="como-trabalhamos">
+    <div class="wrap">
+      <p class="eyebrow">Como trabalhamos</p>
+      <h2 style="margin-top:14px;max-width:34rem">Do briefing ao relatório final, a gente cuida de tudo.</h2>
 
-            const items = filter === 'todos' 
-                ? oohProducts 
-                : oohProducts.filter(p => p.category === filter);
+      <div class="steps">
+        <div class="step">
+          <span class="n">01</span>
+          <h3>Briefing</h3>
+          <p>Conversamos sobre a sua marca, o objetivo da campanha, o público e o orçamento disponível.</p>
+        </div>
+        <div class="step">
+          <span class="n">02</span>
+          <h3>Planejamento</h3>
+          <p>Montamos o plano de mídia: quais meios, onde, quando e com que frequência.</p>
+        </div>
+        <div class="step">
+          <span class="n">03</span>
+          <h3>Negociação</h3>
+          <p>Negociamos diretamente com os veículos para garantir bons espaços e boas condições.</p>
+        </div>
+        <div class="step">
+          <span class="n">04</span>
+          <h3>Acompanhamento</h3>
+          <p>Acompanhamos a veiculação e entregamos o relatório do que foi ao ar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            items.forEach(prod => {
-                const card = document.createElement('div');
-                card.className = 'bg-brand-card border border-brand-grayDark rounded-2xl p-6 flex flex-col justify-between hover:border-brand-yellow/50 transition-all duration-300 hover:-translate-y-1 group';
-                card.innerHTML = `
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center text-brand-yellow border border-brand-grayDark group-hover:bg-brand-yellow group-hover:text-brand-black transition-colors">
-                                <i data-lucide="${prod.icon}" class="w-6 h-6"></i>
-                            </div>
-                            <span class="text-[10px] uppercase tracking-wider bg-brand-dark text-brand-muted px-2.5 py-1 rounded border border-brand-grayDark font-mono">${prod.category}</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brand-yellow transition-colors">${prod.title}</h3>
-                        <p class="text-xs text-brand-muted leading-relaxed mb-4">${prod.shortDesc}</p>
-                    </div>
+  <!-- DIFERENCIAIS -->
+  <section class="why">
+    <div class="wrap why-grid">
+      <div>
+        <p class="eyebrow">Por que a FaleCom</p>
+        <h2 style="margin-top:14px">Um parceiro só para pensar toda a sua mídia.</h2>
+      </div>
+      <ul>
+        <li><strong>Planejamento personalizado</strong><span>Cada plano é feito para a sua marca, sem fórmulas prontas.</span></li>
+        <li><strong>Visão integrada dos meios</strong><span>Rua, TV, rádio, online e eventos trabalhando juntos, e não cada um por conta.</span></li>
+        <li><strong>Relação direta com os veículos</strong><span>Cuidamos da negociação e da burocracia para você focar no seu negócio.</span></li>
+        <li><strong>Acompanhamento de perto</strong><span>Você sabe o que está no ar, onde e quando.</span></li>
+      </ul>
+    </div>
+  </section>
 
-                    <div>
-                        <div class="pt-4 border-t border-brand-grayDark/60 flex items-center justify-between">
-                            <button onclick="openMediaModal('${prod.id}')" class="text-xs text-brand-yellow font-bold hover:underline flex items-center gap-1">
-                                Ver detalhes & specs
-                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                            </button>
-                            <button onclick="openConsultantModal('Cotar ${prod.title}')" class="bg-brand-yellow/10 hover:bg-brand-yellow hover:text-brand-black text-brand-yellow font-bold text-xs px-3 py-1.5 rounded-lg transition-colors">
-                                Cotar
-                            </button>
-                        </div>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow" style="color:var(--ink)">Contato</p>
+        <h2 style="margin-top:14px">FaleCom a gente.</h2>
+        <p class="lead" style="margin-top:18px">Conte um pouco sobre a sua marca e o que você quer comunicar. Retornamos com uma proposta de planejamento.</p>
 
-            lucide.createIcons();
-        }
+        <div class="direct">
+          <a href="#" data-wa target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/falecompropaganda/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            @falecompropaganda
+          </a>
+          <a href="#" data-email>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span data-email-text>E-mail</span>
+          </a>
+        </div>
+      </div>
 
-        // Media Filter Handle
-        function filterMedia(category, btnElement) {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('bg-brand-yellow', 'text-brand-black', 'font-bold');
-                btn.classList.add('bg-brand-card', 'text-brand-muted', 'border-brand-grayDark');
-            });
+      <form id="contactForm" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="nome">Nome *</label>
+            <input id="nome" name="nome" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa *</label>
+            <input id="empresa" name="empresa" required autocomplete="organization">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="telefone">WhatsApp *</label>
+            <input id="telefone" name="telefone" type="tel" required autocomplete="tel" placeholder="(00) 00000-0000" maxlength="15">
+          </div>
+          <div class="field">
+            <label for="meio">Meio de interesse</label>
+            <select id="meio" name="meio">
+              <option value="">Ainda não sei</option>
+              <option>OOH (outdoor, painéis, mídia urbana)</option>
+              <option>TV</option>
+              <option>Rádio</option>
+              <option>Online</option>
+              <option>Eventos</option>
+              <option>Campanha com vários meios</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="mensagem">Sobre a campanha</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Ex.: lançamento de loja em março, foco na região metropolitana"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar pelo WhatsApp</button>
+        <p class="form-note">Ao enviar, abrimos uma conversa no WhatsApp com a sua mensagem já escrita.</p>
+      </form>
+    </div>
+  </section>
+</main>
 
-            btnElement.classList.remove('bg-brand-card', 'text-brand-muted');
-            btnElement.classList.add('bg-brand-yellow', 'text-brand-black', 'font-bold');
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#topo" class="logo on-dark" aria-label="FaleCom Propaganda">Fale<span class="bubble">com</span></a>
+        <p>Estratégia de mídia em OOH, TV, rádio, online e eventos. Planejamento personalizado para sua marca.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a href="#sobre">Quem somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-trabalhamos">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/falecompropaganda/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <span>© 2026 FaleCom Propaganda. Todos os direitos reservados.</span>
+      <span>Estratégia, Mídia e Resultados.</span>
+    </div>
+  </div>
+</footer>
 
-            renderMediaCards(category);
-        }
+<a class="wa-float" href="#" data-wa target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+</a>
 
-        // Open Detail Modal for Media Item
-        function openMediaModal(id) {
-            const item = oohProducts.find(p => p.id === id);
-            if (!item) return;
+<script>
+  /* ====== CONFIGURAÇÃO — preencha com os dados reais ====== */
+  const WHATSAPP = '5548991859191';            // DDI + DDD + número, só dígitos
+  const EMAIL    = 'contato@falecompropaganda.com.br';
+  /* ======================================================== */
 
-            const modalContent = document.getElementById('media-modal-content');
-            modalContent.innerHTML = `
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow rounded-xl flex items-center justify-center">
-                        <i data-lucide="${item.icon}" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <span class="text-xs font-mono text-brand-yellow uppercase tracking-widest">Especificação de Formato</span>
-                        <h3 class="text-2xl font-black text-white font-display">${item.title}</h3>
-                    </div>
-                </div>
+  const HAS_WA = /^\d{12,13}$/.test(WHATSAPP);
+  const waLink = (text) => 'https://wa.me/' + WHATSAPP + (text ? '?text=' + encodeURIComponent(text) : '');
+  const defaultMsg = 'Olá! Vim pelo site da FaleCom e gostaria de falar sobre uma campanha.';
+  if (HAS_WA) {
+    document.querySelectorAll('[data-wa]').forEach(a => a.href = waLink(defaultMsg));
+  } else {
+    // Sem número configurado: esconde WhatsApp e o formulário envia por e-mail
+    document.querySelectorAll('[data-wa]').forEach(a => a.style.display = 'none');
+    document.querySelector('#contactForm button[type=submit]').textContent = 'Enviar mensagem';
+    document.querySelector('.form-note').textContent = 'Ao enviar, abrimos o seu aplicativo de e-mail com a mensagem já escrita.';
+  }
+  document.querySelectorAll('[data-email]').forEach(a => a.href = 'mailto:' + EMAIL);
+  document.querySelectorAll('[data-email-text]').forEach(s => s.textContent = EMAIL);
 
-                <div class="space-y-4 my-6 text-sm text-brand-muted">
-                    <div class="p-4 rounded-xl bg-brand-dark border border-brand-grayDark">
-                        <span class="text-xs font-bold text-white uppercase block mb-1">Especificação Técnica Padrão</span>
-                        <p class="text-brand-yellow font-mono text-xs">${item.spec}</p>
-                    </div>
+  // Menu mobile
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
 
-                    <div>
-                        <h4 class="text-white font-bold text-sm mb-1">Principais Benefícios para o Anunciante:</h4>
-                        <ul class="list-disc pl-5 space-y-1 text-xs">
-                            ${item.benefits.map(b => `<li>${b}</li>`).join('')}
-                        </ul>
-                    </div>
+  // Máscara de telefone
+  const tel = document.getElementById('telefone');
+  tel.addEventListener('input', () => {
+    let v = tel.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length > 10) v = v.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+    else if (v.length > 6) v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+    else if (v.length > 2) v = v.replace(/^(\d{2})(\d*)/, '($1) $2');
+    else if (v.length > 0) v = '(' + v;
+    tel.value = v;
+  });
 
-                    <div>
-                        <h4 class="text-white font-bold text-sm mb-1">Casos de Uso Recomendados:</h4>
-                        <p class="text-xs leading-relaxed">${item.useCases}</p>
-                    </div>
-                </div>
+  // Formulário → WhatsApp
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target;
+    let ok = true;
+    f.querySelectorAll('[required]').forEach(el => {
+      const valid = el.value.trim() !== '' && (el.id !== 'telefone' || el.value.replace(/\D/g, '').length >= 10);
+      el.classList.toggle('invalid', !valid);
+      if (!valid) ok = false;
+    });
+    if (!ok) { f.querySelector('.invalid').focus(); return; }
 
-                <div class="pt-4 border-t border-brand-grayDark flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <button onclick="closeMediaModal()" class="text-xs text-brand-muted hover:text-white">Fechar visualização</button>
-                    <button onclick="closeMediaModal(); openConsultantModal('Interesse em ${item.title}')" class="w-full sm:w-auto bg-brand-yellow text-brand-black font-extrabold px-6 py-3 rounded-xl hover:bg-brand-yellowHover transition-all text-sm flex items-center justify-center gap-2 yellow-glow-sm">
-                        <i data-lucide="message-square" class="w-4 h-4"></i>
-                        Cotar este formato com Consultor
-                    </button>
-                </div>
-            `;
-
-            lucide.createIcons();
-            document.getElementById('media-detail-modal').classList.remove('hidden');
-        }
-
-        function closeMediaModal() {
-            document.getElementById('media-detail-modal').classList.add('hidden');
-        }
-
-        // Render Articles Grid
-        function renderArticles() {
-            const grid = document.getElementById('articles-grid');
-            grid.innerHTML = '';
-
-            oohArticles.forEach(art => {
-                const card = document.createElement('div');
-                card.className = 'bg-brand-card border border-brand-grayDark rounded-2xl p-6 flex flex-col justify-between hover:border-brand-yellow/40 transition-all';
-                card.innerHTML = `
-                    <div>
-                        <div class="flex items-center justify-between text-xs text-brand-muted mb-3">
-                            <span class="bg-brand-dark px-2.5 py-1 rounded text-brand-yellow font-semibold">${art.category}</span>
-                            <span>${art.date}</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2 leading-snug">${art.title}</h3>
-                        <p class="text-xs text-brand-muted leading-relaxed mb-4">${art.summary}</p>
-                    </div>
-                    <button onclick="openArticleModal(${art.id})" class="text-xs font-bold text-brand-yellow hover:underline flex items-center gap-1">
-                        Ler artigo completo
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-                `;
-                grid.appendChild(card);
-            });
-
-            lucide.createIcons();
-        }
-
-        function openArticleModal(id) {
-            const art = oohArticles.find(a => a.id === id);
-            if (!art) return;
-
-            const modalContent = document.getElementById('article-modal-content');
-            modalContent.innerHTML = `
-                <div class="mb-4">
-                    <span class="text-xs font-bold text-brand-yellow uppercase tracking-wider">${art.category} • ${art.date}</span>
-                    <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 font-display">${art.title}</h2>
-                </div>
-                <div class="text-sm text-brand-muted leading-relaxed space-y-4 my-6 border-t border-b border-brand-grayDark py-4">
-                    ${art.content}
-                </div>
-                <div class="flex justify-between items-center pt-2">
-                    <button onclick="closeArticleModal()" class="text-xs text-brand-muted hover:text-white">Voltar aos artigos</button>
-                    <button onclick="closeArticleModal(); openConsultantModal('Dúvida pós leitura artigo ${art.title}')" class="bg-brand-yellow text-brand-black font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-brand-yellowHover">
-                        Tirar dúvidas sobre a estratégia
-                    </button>
-                </div>
-            `;
-            lucide.createIcons();
-            document.getElementById('article-detail-modal').classList.remove('hidden');
-        }
-
-        function closeArticleModal() {
-            document.getElementById('article-detail-modal').classList.add('hidden');
-        }
-
-        // Consultant Contact Modal Handling
-        function openConsultantModal(originText = 'Geral') {
-            document.getElementById('modal-origin-input').value = originText;
-            document.getElementById('consultant-modal-origin').innerText = `Origem do Contato: ${originText}`;
-            document.getElementById('consultant-modal').classList.remove('hidden');
-        }
-
-        function closeConsultantModal() {
-            document.getElementById('consultant-modal').classList.add('hidden');
-        }
-
-        function handleConsultantFormSubmit(e) {
-            e.preventDefault();
-            const origin = document.getElementById('modal-origin-input').value;
-            const name = document.getElementById('modal-name').value;
-            const company = document.getElementById('modal-company').value;
-            const phone = document.getElementById('modal-phone').value;
-            const message = document.getElementById('modal-message').value;
-
-            // Generate WhatsApp formatted message
-            const text = `Olá! Vim pelo site da FALECOM PROPAGANDA.\n\n*Origem:* ${origin}\n*Nome:* ${name}\n*Empresa:* ${company}\n*WhatsApp:* ${phone}\n*Mensagem:* ${message || 'Gostaria de agendar uma consultoria em Mídia OOH.'}`;
-            
-            const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodedText}`;
-
-            showToast('Redirecionando para o WhatsApp do Consultor...');
-            closeConsultantModal();
-
-            setTimeout(() => {
-                window.open(whatsappUrl, '_blank');
-            }, 800);
-        }
-
-        // Simulator Form Handler
-        function handleSimulatorSubmit(e) {
-            e.preventDefault();
-            const location = document.getElementById('sim-location').value;
-            const objective = document.getElementById('sim-objective').value;
-            const format = document.getElementById('sim-format').value;
-            const name = document.getElementById('sim-name').value;
-            const phone = document.getElementById('sim-phone').value;
-
-            const text = `Olá! Fiz uma simulação de campanha OOH no site FALECOM:\n\n*Nome/Empresa:* ${name}\n*Contato:* ${phone}\n*Região Alvo:* ${location}\n*Objetivo:* ${objective}\n*Formato Desejado:* ${format}\n\nGostaria de receber a recomendação estratégica e estimativa de valores.`;
-
-            const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodedText}`;
-
-            showToast('Simulação gerada! Abrindo canal direto com Consultor...');
-
-            setTimeout(() => {
-                window.open(whatsappUrl, '_blank');
-            }, 1000);
-        }
-
-        // Helper Toast Notification
-        function showToast(message) {
-            const container = document.getElementById('toast-container');
-            const toast = document.createElement('div');
-            toast.className = 'bg-brand-yellow text-brand-black font-bold px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2 text-sm transition-all transform translate-y-2 border border-black/10';
-            toast.innerHTML = `
-                <i data-lucide="check-circle" class="w-5 h-5"></i>
-                <span>${message}</span>
-            `;
-            container.appendChild(toast);
-            lucide.createIcons();
-
-            setTimeout(() => {
-                toast.classList.add('opacity-0', 'translate-y-[-10px]');
-                setTimeout(() => toast.remove(), 300);
-            }, 3000);
-        }
-    </script>
+    const d = Object.fromEntries(new FormData(f));
+    const msg = [
+      'Olá! Vim pelo site da FaleCom.',
+      '',
+      'Nome: ' + d.nome,
+      'Empresa: ' + d.empresa,
+      'WhatsApp: ' + d.telefone,
+      d.meio ? 'Meio de interesse: ' + d.meio : '',
+      d.mensagem ? 'Sobre a campanha: ' + d.mensagem : ''
+    ].filter(Boolean).join('\n');
+    if (HAS_WA) window.open(waLink(msg), '_blank', 'noopener');
+    else location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Contato pelo site') + '&body=' + encodeURIComponent(msg);
+  });
+</script>
 </body>
 </html>
